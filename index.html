@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Project</title>
+
+	<script src="https://d3js.org/d3.v7.min.js"></script>
+	<script src="/js/HeatMap.js"></script>
+	<script src="/js/BubbleChart.js"></script>
+	<script src="/js/PieChart.js"></script>
+	<script src="/js/LineChart.js"></script>
+	<script src="/js/BarChart.js"></script>
+	<script src="/js/script.js"></script>
+	<link rel="stylesheet" href="/css/styles.css" />
+</head>
+
+<body>
+	<h1 class="title text-center">Cracking the Gaming Industry</h1>
+	<div class="container">
+		<h2 class="text-center"> Why should we analyze the video game industry?</h2>
+		<p class="intro">
+			This project explores the video game industry by analyzing various datasets related to game sales, genres
+			and platforms. We aim to uncover trends and insights into how different genres have evolved over time and
+			the impact of publishers on the gaming market. Through interactive visualizations, we will tell the story of
+			video game popularity and sales distribution across different platforms.
+			By examining historical data, we can identify patterns in consumer preferences, the rise and fall of
+			specific genres, and the influence of major publishers. This analysis not only highlights the dynamics of
+			the gaming industry but also provides valuable insights for developers and marketers looking to understand
+			market trends and consumer behavior.
+		</p>
+		<h2 class="story-line">Let's first understand the publishers and platforms released by them along with
+			the sales they have generated.
+		</h2>
+		<div class="viz-container">
+			<svg id="games_library_svg"></svg>
+			<div class="viz-detail">
+				<p class="viz-title">
+					Games Library by Platform
+				</p>
+				<div class="viz-content" id="search_label">
+					Search: <input type="text" id="search" placeholder="Search by platform...">
+				</div>
+				<p class="viz-content" id="games_library_detail">
+					Welcome to the interactive video game sales bubble chart! This visualization highlights the
+					popularity of video game genres over the years, with each bubble representing a unique genre's
+					performance in a specific year.
+					Explore how different genres evolved, uncovering their rise and fall in popularity
+					over time. <strong> Hover over the bubbles</strong> for detailed insights, and <strong>click on a
+						genre</strong> to dive deeper into
+					its historical journey.
+				</p>
+			</div>
+		</div>
+		<br>
+
+		<h2 class="story-line"> Now, let's dive into the gaming market</h2>
+		<div class="viz-container">
+			<div class="viz-detail">
+				<p class="viz-title">Genre Distribution by Publisher</p>
+				<p class="viz-content">
+
+				</p>
+				<p class="viz-content" id="regional-sales">
+					Welcome to the interactive video game sales chart! This visualization showcases the global sales of
+					popular video games across different platforms and publishers. Each slice represents a publisher's
+					contribution to the gaming industry.
+					<br>
+					<br>
+					<b>Click on a slice to discover more about their iconic games and market impact.</b>
+				</p>
+
+			</div>
+			<svg id="regional_console_sales_svg"></svg>
+		</div>
+		<br>
+
+		<h2 class="story-line">Understanding the volume of games released in each genre every year</h2>
+		<div class="viz-container">
+			<svg id="genre_trends_svg"></svg>
+			<div class="viz-detail">
+				<p class="viz-title">Genre Release Trend</p>
+				<p class="viz-content">
+					This line chart visualizes the number of video games released each year across various genres from
+					2000 to 2016. Hover over the data points to see specific counts for each year and genre. Click on a
+					line to highlight it and explore trends within a particular genre.
+				</p>
+
+			</div>
+			<br>
+
+			<br>
+		</div>
+		<h2 class="story-line">Using a grouped bar chart and a heatmap, let's find out what type of game genres
+			these consoles focused on
+			to increase their sales.</h2>
+		<div class="viz-container">
+			<div class="viz-detail">
+				<p class="viz-title">Genre Popularity Across Consoles</p>
+				<p class="viz-content">
+					This grouped bar chart visualizes the global sales of video games across different genres and
+					platforms, showcasing the popularity of each genre on the top 10 platforms. The bars represent the
+					total global sales for each genre by platform, with each platform having a distinct color. You
+					can<b> interact with the chart by clicking on a legend item</b> to show the sales data for that
+					platform, allowing for a focused comparison of selected platforms. Clicking anywhere else on the
+					chart will restore the visibility of all platforms, providing a comprehensive view of the data. This
+					chart allows users to explore trends in video game sales across various genres and platforms,
+					offering insights into the most popular gaming systems and genre preferences over time.
+				</p>
+			</div>
+			<svg id="genre_popularity_svg"></svg>
+		</div>
+		<div class="viz-container">
+			<svg id="heatmap_svg"></svg>
+			<div class="viz-detail">
+				<p class="viz-title">Correlation between Publisher and Games</p>
+				<p class="viz-content">
+					This visualization provides an interactive heatmap that highlights the percentage of games released
+					by publishers within specific genres. Each cell represents a publisher-genre pair, with the color
+					intensity indicating the proportion of games released.<b> Upon selecting two cells, a detailed
+						comparison graph is generated.</b> This graph displays key metrics such as the total number of
+					games published, genre-specific releases, overall sales, and regional sales across North America,
+					Europe, and Japan. The mirrored bar chart format allows users to easily compare these metrics side
+					by side, offering valuable insights into the performance and market reach of different publishers in
+					various genres.
+				</p>
+			</div>
+
+		</div>
+		<div class="viz-container" id="comparison_container">
+		</div>
+
+		<p class="intro">
+			We can see that Nintendo focused on platform and puzzle genres as seen in the heatmap, which is a
+			family-friendly genre, and parents are also not hesitant in buying these games for their kids. Similarly,
+			Electronic Arts mainly focused on the sports genre, which helped them increase their sales because sports
+			lovers
+			would play sports games such as Cricket07, FIFA, etc.
+			Moreover, the analysis reveals that consoles like PlayStation and Xbox have diversified their game
+			offerings,
+			catering to a broader audience by including various genres such as action, adventure, and role-playing
+			games.
+			This strategic approach has allowed them to maintain a competitive edge in the market, appealing to both
+			casual
+			and hardcore gamers alike. Hence, it can be said that sticking to certain types of game genres for a long
+			time
+			can help the publisher acquire a top position in the gaming industry.
+		</p>
+	</div>
+</body>
+
+</html>
