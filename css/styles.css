@@ -1,0 +1,149 @@
+body {
+	background-color: #1B2838;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 100px;
+}
+
+.intro {
+	color: #fff;
+	max-width: 1400px;
+	font-size: 18px;
+	color: rgb(176, 255, 255);
+	text-align: justify;   
+}
+
+.story-line {
+	font-style: italic;
+	font-size: 22px;
+}
+
+.container {
+	margin: auto;
+	max-width: 1600px;
+	flex-wrap: wrap;
+	gap: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.title {
+	font-size: 42px;
+	margin: 20px 0;
+	color: #ffffff;
+}
+
+.viz-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+
+.viz-title {
+	text-align: center;
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.viz-content {
+	text-align: justify;
+	margin: 0;
+	font-size: 20px;
+	line-height: 1.5;
+	color: #333;
+	padding: 20px;
+}
+
+#games_library_detail {
+	text-align: justify;
+	font-size: 20px;
+}
+
+.viz-detail {
+	width: 500px;
+	height: 700px;
+	background-color: #6e8cae;
+	border: 1px solid #3e6691;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	box-shadow: 0 2px 5px #0000001a;
+}
+
+svg {
+	width: 1000px;
+	height: 700px;
+	background-color: #fff;
+	border: 1px solid #dcdcdc;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px #0000001a;
+	align-items: center;
+	align-content: center;
+}
+
+.tooltip {
+	position: absolute;
+	text-align: center;
+	width: auto;
+	max-width: 150px;
+	padding: 5px 10px;
+	font: 16px sans-serif;
+	color: #dcdcdc;
+	background: #15181d;
+	border: 0px;
+	border-radius: 8px;
+	pointer-events: none;
+	opacity: 0;
+}
+
+#search {
+	font-size: 28px;
+	width: 300px;
+}
+
+#search_label {
+	font-size: 30px;
+}
+
+.heatmap-cell {
+	cursor: pointer;
+}
+
+.heatmap-cell.selected {
+	stroke: black;
+	stroke-width: 2;
+}
+
+#comparison-graph-container {
+	margin-top: 20px;
+}
+
+.cell.selected {
+	stroke: black;
+	stroke-width: 3;
+	fill: red;
+}
+
+h2 {
+	color: #fff;
+	text-align: center;
+}
+
+.conclusion {
+	color: #fff;
+	font-size: larger;
+	text-align: center;
+	align-items: center;
+}
