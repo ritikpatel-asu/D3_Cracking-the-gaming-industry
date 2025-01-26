@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Load the dataset
 function loadDataset() {
-	return d3.csv('data/vgsales.csv')
+	return d3.csv('/D3_Cracking-the-gaming-industry/data/vgsales.csv')
 		.then(data => {
 			return data;
 		})
